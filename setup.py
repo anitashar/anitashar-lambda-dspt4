@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 with open("README.md", "r") as fh:
     long_description = fh.read()
 setup(
-    name="ani_utility",
+    name="aniutility",
     version="1.0",
     author="Anita",
     author_email="anitashar2006@gmail.com",
