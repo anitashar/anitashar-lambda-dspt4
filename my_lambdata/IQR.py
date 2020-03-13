@@ -7,6 +7,14 @@ import numpy as np
 
 
 def removeOutliers(x):
+	"""
+	remove outliers in a series
+
+	param: x(numeric) 
+
+	return outlier
+
+	"""
 	a = np.array(x)
 	upper_quartile = np.percentile(a, 75)
 	lower_quartile = np.percentile(a, 25)
