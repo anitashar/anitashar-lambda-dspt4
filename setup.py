@@ -11,9 +11,10 @@ setup(
     author_email="anitashar2006@gmail.com",
     description="my_func",
     long_description=long_description,
-    long_description_content_type="text/markdown", # required if using a md file for long desc
-    #license="MIT",
+    long_description_content_type="text/markdown",
+    # required if using a md file for long desc
+    # license="MIT",
     url="https://github.com/anitashar/anitashar-lambda-dspt4",
-    #keywords="",
-    packages=find_packages() # ["my_lambdata"]
+    # keywords="",
+    packages=find_packages()  # ["my_lambdata"]
 )
