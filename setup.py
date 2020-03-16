@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setup(
     name="aniutility",
-    version="1.0",
+    version="1.1",
     author="Anita",
     author_email="anitashar2006@gmail.com",
     description="my_func",

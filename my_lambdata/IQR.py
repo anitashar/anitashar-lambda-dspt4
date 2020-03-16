@@ -32,5 +32,5 @@ def removeOutliers(x):
 
 if __name__ == "__main__":
 
-	print(removeOutliers([-10,2,5,3,8,4,7,5,10,99,1000]))
+	print(removeOutliers([-10,2,5,3,8,4,7,5,10,99,500]))
 
