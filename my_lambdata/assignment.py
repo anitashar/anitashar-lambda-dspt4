@@ -3,12 +3,12 @@
 
 import pandas
 
-class DataProcessor():
-    def __init__(self,my_df):
-        """
-        param: my_df (pandas.DayaFrame) containing a column called "abbrev"
-        """
-        self.df = my_df.copy()
+class CustomFrame(pandas.DataFrame):
+    # def __init__(self,my_df):
+    #     """
+    #     param: my_df (pandas.DayaFrame) containing a column called "abbrev"
+    #     """
+    #     self.df = my_df.copy()
 
     def add_state_names(self):
         
@@ -37,10 +37,17 @@ if __name__ == "__main__":
     # print(df1.head())
     # new_df = add_state_names(df1)
     # print(new_df.head())
-    processor = DataProcessor(df1)
-    print(processor.df.head())
-    processor.add_state_names()
-    print(processor.df.head())
+
+
+    # processor = DataProcessor(df1)
+    # print(processor.df.head())
+    # processor.add_state_names()
+    # print(processor.df.head())
+
+    custom_df = CustomFrame({"abbrev": ["CA", "CT", "CO", "TX", "DC"]})
+    print(custom_df.head())
+    # custom_df.add_state_names()
+    # print(custom_df.head())
 
 
     print ("_______________________")
