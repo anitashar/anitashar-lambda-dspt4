@@ -25,7 +25,7 @@ class CustomFrame(pandas.DataFrame):
             "CT" : "Conn",
             "CO" : "Colorado"
         }
-        self.df["name"] =   self.df["abbrev"].map(names_map)
+        self["name"] =   self["abbrev"].map(names_map)
         
     
 
