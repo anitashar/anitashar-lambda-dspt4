@@ -1,10 +1,14 @@
 
-import pandas 
 
-from my_lambdata.my_mod import enlarge
+def enlarge(n):
+    return n*100
 
-df = pandas.DataFrame({"x":[1,2,3], "y":[4,5,6]})
-print(df.head())
 
-x = 5
-print("ENLARGE", x, "TO", enlarge(x))
+
+
+if __name__ == '__main__':
+
+    print("global scope")
+
+    y = float(input('Please input a number to enlarge: '))
+    print(enlarge(y))
